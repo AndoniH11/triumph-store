@@ -1,0 +1,226 @@
+import t100 from './img/t-100.jpg';
+import t120 from './img/t-120.jpg';
+import scrambler from './img/scrambler.jpg';
+import bobber from './img/bobber.jpg';
+import thruxton from './img/thruxton.jpg';
+import streetTriple from './img/street-triple.jpg';
+import streetTripleRS from './img/street-triple-rs.jpg';
+import tiger800 from './img/tiger-800.jpg';
+import tiger900 from './img/tiger-900.jpg';
+import tiger1200 from './img/tiger-1200.jpg';
+import bonnevilleWP from './img/bonnevile-wp.jpg';
+import scramblerWP from './img/scrambler-wp.jpg';
+import bobberWP from './img/bobber-wp.jpg';
+import thruxtonWP from './img/thruxton-wp.jpg';
+import streetTripleWP from './img/street-triple-wp.jpg'
+import tigerWP from './img/tiger-wp.jpg'
+
+
+
+export const items = [
+    {
+        id: 1,
+        brand: 'Triumph',
+        model: 'Bonneville T-100',
+        slug: 'boneville-t-100',
+        type: 'cafe-racer',
+        cc: 865,
+        cv: 55,
+        topSpeed: 185,
+        weight: 205,
+        img: t100,
+        wallpaper: bonnevilleWP,
+        price: 10000,
+        info: 'La Bonneville T-100 es una moto con caracter y estilo. Cohesiona a la perfección el estilo clásico, con la elegancia inglesa a través del nuevo diseño y el discreto acabado negro mate.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: true,
+    },
+    {
+        id: 2,
+        brand: 'Triumph',
+        model: 'Bonneville T-120',
+        slug: 'bonneville-t-120',
+        type: 'cafe-racer',
+        cc: 1200,
+        cv: 80,
+        topSpeed: 193,
+        weight: 224,
+        img: t120,
+        wallpaper: bonnevilleWP,
+        price: 11500,
+        info: 'Dando continuidad al estilo de la Bonneville de aquellos años 50, la T-120 viene llena de fuerza y potencia para aquellos moteros más atrevidos a los que les gusten las motos con un buen arranque.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 3,
+        brand: 'Triumph',
+        model: 'Scrambler',
+        slug: 'scrambler',
+        type: 'cafe-racer',
+        cc: 900,
+        cv: 65,
+        topSpeed: 177,
+        weight: 206,
+        img: scrambler,
+        wallpaper: scramblerWP,
+        price: 10500,
+        info: 'Con un significativo aumento de la potencia del motor (900cc) podrás conducir esta Triumph Scrambler por cualquier tipo de terreno, con fuerza y estilo.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 4,
+        brand: 'Triumph',
+        model: 'Bobber',
+        slug: 'bobber',
+        type: 'classic',
+        cc: 1200,
+        cv: 77,
+        topSpeed: 150,
+        weight: 228,
+        img: bobber,
+        wallpaper: bobberWP,
+        price: 17500,
+        info: 'La Triumph Bobber es la moto más salvaje de nuestro catálogo. Puro estilo americano, hará que cualquier conducción parezca un viaje por la ya mítica ruta 66 californiana.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: true,
+    },
+    {
+        id: 5,
+        brand: 'Triumph',
+        model: 'Thruxton',
+        slug: 'thruxton',
+        type: 'classic',
+        cc: 865,
+        cv: 97,
+        topSpeed: 209,
+        weight: 205,
+        img: thruxton,
+        wallpaper: thruxtonWP,
+        price: 21000,
+        info: 'Probablemente la moto más clásica del catálogo, equipada con neumáticos amplios que ofrecen una gran estabilidad y un potente motor capaz de darle un arranque trepidante.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 6,
+        brand: 'Triumph',
+        model: 'Street Triple',
+        slug: 'street-triple',
+        type: 'naked',
+        cc: 674,
+        cv: 95,
+        topSpeed: 233,
+        weight: 183,
+        img: streetTriple,
+        wallpaper: streetTripleWP,
+        price: 9500,
+        info: 'Las Street Triple son sin duda alguna las naked más excitantes, dinámicas y ágiles en el mercado. Ya sea para conducirla diariamente o para destrozar las marcas en circuito, esta moto es tu mejor elección: potencia, comodidad y clase, todo en uno.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 7,
+        brand: 'Triumph',
+        model: 'Street Triple RS',
+        slug: 'street-triple-rs',
+        type: 'naked',
+        cc: 765,
+        cv: 123,
+        topSpeed: 233,
+        weight: 166,
+        img: streetTripleRS,
+        wallpaper: streetTripleWP,
+        price: 10500,
+        info: 'Las Street Triple son sin duda alguna las naked más excitantes, dinámicas y ágiles en el mercado. Ya sea para conducirla diariamente o para destrozar las marcas en circuito, esta moto es tu mejor elección: potencia, comodidad y clase, todo en uno.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 8,
+        brand: 'Triumph',
+        model: 'Tiger 800',
+        slug: 'tiger-800',
+        type: 'Trail',
+        cc: 800,
+        cv: 95,
+        topSpeed: 201,
+        weight: 210,
+        img: tiger800,
+        wallpaper: tigerWP,
+        price: 12500,
+        info: 'Las Triumph Tiger te ofrecen la oportunidad de disfrutar de la conducción en todo tipo de terrenos: ciudad, carretera o tierra. No hay nada con lo que estas bestias no puedan. Equipadas con la mejor ingeniería, si apuestas por ella tendrás una moto para toda la vida.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 9,
+        brand: 'Triumph',
+        model: 'Tiger 900',
+        slug: 'tiger-900',
+        type: 'Trail',
+        cc: 900,
+        cv: 95,
+        topSpeed: 210,
+        weight: 192,
+        img: tiger900,
+        wallpaper: tigerWP,
+        price: 13000,
+        info: 'Las Triumph Tiger te ofrecen la oportunidad de disfrutar de la conducción en todo tipo de terrenos: ciudad, carretera o tierra. No hay nada con lo que estas bestias no puedan. Equipadas con la mejor ingeniería, si apuestas por ella tendrás una moto para toda la vida.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: false
+    },
+    {
+        id: 10,
+        brand: 'Triumph',
+        model: 'Tiger 1200',
+        slug: 'tiger-1200',
+        type: 'Trail',
+        cc: 1200,
+        cv: 141,
+        topSpeed: 225,
+        weight: 210,
+        img: tiger1200,
+        wallpaper: tigerWP,
+        price: 15000,
+        info: 'Las Triumph Tiger te ofrecen la oportunidad de disfrutar de la conducción en todo tipo de terrenos: ciudad, carretera o tierra. No hay nada con lo que estas bestias no puedan. Equipadas con la mejor ingeniería, si apuestas por ella tendrás una moto para toda la vida.',
+        inCart: false,
+        count: 0,
+        total: 0,
+        featured: true,
+    },
+
+]
+
+export const detailProduct = {
+
+    id: 1,
+    brand: 'Triumph',
+    model: 'Boneville T-100',
+    type: 'cafe-racer',
+    img: t100,
+    price: 10000,
+    info: 'La Boneville T-100 es una moto con caracter y estilo. Cohesiona a la perfección el estilo clásico, con la elegancia inglesa a través del nuevo diseño y el discreto acabado negro mate.',
+    inCart: false,
+    count: 0,
+    total: 0
+};
