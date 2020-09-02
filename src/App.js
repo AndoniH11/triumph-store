@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import DetailedProduct from './components/DetailedProduct';
 import DondeEstamos from './components/DondeEstamos';
 import Cart from './components/cart/Cart';
+import CompraRealizada from './components/CompraRealizada';
 
 
 class App extends React.Component{
@@ -20,6 +21,7 @@ class App extends React.Component{
           <Route exact path='/donde-estamos' component={DondeEstamos}/>
           <Route exact path='/productos/:slug' component={DetailedProduct}/>
           <Route exact path='/cesta' component={Cart}/>
+          <Route exact path='/compra-realizada' component={CompraRealizada}/>
         </Switch>
         <Footer/>
       </React.Fragment>

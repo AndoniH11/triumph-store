@@ -10,7 +10,7 @@ class Cart extends React.Component {
         return (
             <ProductConsumer>
                 {(value) => {
-                    const { cart, cartSubTotal, cartTotal, cartTax } = value;
+                    const { cart, cartSubTotal, cartTotal, cartTax, clearCart } = value;
                     if (cart.length === 0) {
                         return (
                             <div className='cesta-container'>
@@ -25,7 +25,7 @@ class Cart extends React.Component {
                     } else {
                         return (
                             <section>
-                                <CartResumen/>
+                                <CartResumen />
                                 <div className='cesta-container'>
                                     {cart.map(item => {
                                         return (
@@ -39,12 +39,19 @@ class Cart extends React.Component {
                                     <p><strong>IVA (21%): </strong> {cartTax} €</p>
                                     <p><strong>Precio final:</strong>  {cartTotal} €</p>
                                     <div className='cesta-totales-botones'>
-                                        <button className='boton-cesta-container cesta-boton' id='vaciar-boton'>
+                                        <button className='boton-cesta-container cesta-boton'
+                                            id='vaciar-boton'
+                                            onClick={() => clearCart()}>
                                             Vaciar cesta
-                                </button>
-                                        <button className='boton-cesta-container cesta-boton' id='comprar-boton'>
-                                            Comprar
-                                </button>
+                                        </button>
+                                        <Link to='/compra-realizada'>
+                                            <button 
+                                                className='boton-cesta-container cesta-boton' 
+                                                id='comprar-boton'
+                                                onClick={() => clearCart()}>
+                                                Comprar
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </section>

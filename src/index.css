@@ -911,3 +911,67 @@ a{
   font-size: 20px;
   padding: 15px 0px;
 }
+
+/* COMPRA REALIZADA */
+
+.compra-container{
+  text-align: center;
+  padding-top: 100px;
+  width: 75vw;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.compra-container h3{
+  font-size: 40px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.info-compra{
+  color: #555;
+}
+.compra-container p{
+  margin-bottom: 15px;
+}
+
+.boton-compra-container{
+  padding: 8px 10px;
+  border-radius: 8px;
+  width: 250px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  background-color: #333;
+  color: white;
+  border: none;
+  box-shadow: 3px 3px 5px #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: all 400ms;
+}
+
+.boton-compra-container:hover{
+  background-color: rgba(138, 102, 13, 0.658);
+  box-shadow: 3px 3px 5px #aaa, inset 5px 5px 25px rgba(95, 70, 8, 0.658);;
+}
+
+.como-contactar{
+  margin-top: 50px;
+}
+
+.contacto{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: -50px;
+}
+
+.icon-compra-contacto{
+  margin-bottom: 20px;;
+  font-size: 35px;
+}

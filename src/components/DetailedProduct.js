@@ -43,7 +43,6 @@ class DetailedProduct extends React.Component {
         const bike = getBike(this.context.slug);
 
         const { model, img, wallpaper, info, price } = bike
-
         return (
             <div className='detailedProductContainer'>
                 <div className='ocultar-container' style={{ display: this.state.display }}>
@@ -80,7 +79,9 @@ class DetailedProduct extends React.Component {
                         <button
                             className='boton-cesta-container'
                             id='boton-comprar'
-                            onClick={() => añadirEnCesta(bike), () => this.handleClick()}>
+                            onClick={() => {
+                                añadirEnCesta(bike);
+                                this.handleClick()}}>
                             Comprar
                         </button>
                     </div>

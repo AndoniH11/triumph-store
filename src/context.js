@@ -35,6 +35,13 @@ class ProductProvider extends React.Component {
         })
     }
 
+    clearCart = () => {
+        let tempCart = []
+        this.setState({
+            cart: tempCart
+        })
+    }
+
     añadirEnCesta = (bike) => {
         const index = this.state.cart.find(item => item.id === bike.id)
 
@@ -48,6 +55,7 @@ class ProductProvider extends React.Component {
                 }
             }, ()=> this.addTotals())
         }
+        console.log('Funciona')
     }
 
     removeItem = (id)=>{
@@ -177,6 +185,7 @@ class ProductProvider extends React.Component {
                 añadirEnCesta: this.añadirEnCesta,
                 incrementar: this.incrementar,
                 reducir: this.reducir,
+                clearCart: this.clearCart
             }}>
                 {this.props.children}
             </ProductContext.Provider>
