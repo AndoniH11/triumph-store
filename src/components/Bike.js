@@ -16,7 +16,7 @@ class Bike extends React.Component{
                 </div>
                 <div className='carta-titulo'><h1>{model}</h1></div>
                 <h2>{brand}</h2>
-                <img src={img} className='bike-img'/>
+                <img src={img} className='bike-img' alt='product'/>
                 <p className='precio'>Starting from: {price}€</p>
                 
             </div>

@@ -17,7 +17,7 @@ class ProductsList extends React.Component {
 
                         <div className='products-container'>
                             <div className='wallpaperContainer'>
-                                <img src={wallpaper} className='wallpaper' />
+                                <img src={wallpaper} className='wallpaper' alt='wallpaper'/>
                             </div>
                             <div className='productos-contenido'>
                                 <h2 className='titulo'>Nuestras Motos</h2>
