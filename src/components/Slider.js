@@ -17,17 +17,17 @@ const Slider = () => {
             <Slide {...properties}>
                 <div className='each-slide'>
                     <div>
-                        <img src={slider1} alt='boneville t-100' id='img-slider' style={{width: '100vw', height: '100vh'}}/>
+                        <img src={slider1} alt='boneville t-100' id='img-slider' />
                     </div>
                 </div>
                 <div className='each-slide'>
                     <div>
-                        <img src={slider2} alt='boneville t-100' id='img-slider' style={{width: '100vw', height: '100vh'}}/>
+                        <img src={slider2} alt='boneville t-100' id='img-slider' />
                     </div>
                 </div>
                 <div className='each-slide'>
                     <div>
-                        <img src={slider3} alt='boneville t-100' id='img-slider' style={{width: '100vw', height: '100vh'}}/>
+                        <img src={slider3} alt='boneville t-100' id='img-slider' />
                     </div>
                 </div>
             </Slide>

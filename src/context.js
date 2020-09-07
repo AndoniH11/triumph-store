@@ -185,7 +185,8 @@ class ProductProvider extends React.Component {
                 añadirEnCesta: this.añadirEnCesta,
                 incrementar: this.incrementar,
                 reducir: this.reducir,
-                clearCart: this.clearCart
+                clearCart: this.clearCart,
+                removeItem: this.removeItem
             }}>
                 {this.props.children}
             </ProductContext.Provider>

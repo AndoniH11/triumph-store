@@ -3,7 +3,7 @@ import {FaTrash} from 'react-icons/fa'
 const CartItem = (bike) => {
     const { item, value} = bike
     const {count} = item
-    const {incrementar, reducir} = value
+    const {incrementar, reducir, removeItem} = value
 
     if(item.count > 0){
         var precioSinIva = ((item.price * 0.8264)*count).toFixed(2)
@@ -30,7 +30,7 @@ const CartItem = (bike) => {
                     </button>
                     
                 </div>
-                <FaTrash className='trash'/>
+                <FaTrash className='trash' onClick={()=>removeItem(item.id)}/>
             </div>
             <div className='totals'>
                 <p><strong>Precio: </strong>{precioSinIva} €</p>
