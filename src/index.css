@@ -983,6 +983,7 @@ a{
   width: 75vw;
   margin: 0 auto;
   padding-bottom: 150px;
+  min-height: 80vh;;
 }
 
 .cesta-container h3{
